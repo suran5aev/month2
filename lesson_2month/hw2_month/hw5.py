@@ -13,17 +13,10 @@ class MagicCalculator:
             return self.number_1 * other.number_2
 
         def __truediv__(self, other):
-            if other.number_2 != 0:
-                return self.number_1 / other.number_2
-            else:
-                return "Деление на ноль не допускается"
+            return self.number_1 / self.number_2
 
-        def __floordiv__(self, other):
-            if other.number_2 != 0:
+        def __floordiv__(self, other):     
                 return self.number_1 // other.number_2
-            else:
-                return "Деление на ноль не допускается"
-            
 num1 = MagicCalculator(10, 5)
 num2 = MagicCalculator(3, 2)
 
