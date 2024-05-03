@@ -1,4 +1,3 @@
-
 class MagicCalculator:
         def __init__(self, number_1, number_2):
             self.number_1 = number_1
